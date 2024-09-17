@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\urlstyle{same}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Samuel Skean} \\ \vspace{1pt} \href{mailto:skeansamuel64@gmail.com}{\underline{skeansamuel64@gmail.com}} $|$ 
+    LinkedIn: \href{https://www.linkedin.com/in/samuel-skean-nod/}{\underline{samuel-skean-nod}} $|$ \href{https://samuel-skean.github.io}{\underline{samuel-skean.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Chicago}{Chicago, IL}
+      {Master's of Science in Computer Science}{Aug. 2024 -- Expected May 2026}
+      \begin{itemize}
+        \item \textbf{GPA}{: Not Yet Known}
+        \item Relevant Coursework: Operating Systems, Compilers, Cloud Computing.
+      \end{itemize}
+    \resumeSubheading
+      {University of Illinois at Chicago}{Chicago, IL}
+      {Bachelor of Science in Computer Science}{Aug. 2020 -- May 2024}
+      \begin{itemize}
+        \item \textbf{GPA}{: 3.93/4.0}
+        \item \textbf{Relevant Coursework}{: Web App Development, Data Structures, Systems Programming, Programming Language Design, Principles of Concurrent Computing, Systems Performance and Concurrent Computing, Graphics.}
+      \end{itemize}
+    % \resumeSubheading
+    %   {Wheaton Warrenville South High School}{Wheaton, IL}
+    %   {Graduated While Taking Only AP and Honors Level Classes}{Aug. 2017 -- May 2020}
+    %   \begin{itemize}
+    %     \item \textbf{GPA: 3.9/4.0, ACT: 36, SAT: 1530}
+    %     \item Relevant College Level Classes: AP Computer Science A, AP Calculus BC, AP Physics C: Electricity And Magnetism.
+    %   \end{itemize}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Rust, Java, C\verb|#|, Dart, Swift, Python, SQL (SQLite), JavaScript, HTML/CSS, F\verb|#|, OCaml, Matlab, Bash, AWK, x86 Assembly (AT\verb|&|T)} \\
+     \textbf{Frameworks/Libraries}{: JavaFX, React.js, Flutter, Axum (web framework), Matplotlib, WebGL2, p5.js} \\
+    }}
+ \end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CS Teaching Assistant (Undergrad and Grad)}{January 2023 -- Present}
+      {UIC}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Helped students with syntax and Data Structures (lists, trees, hashmaps) in C++}
+        \resumeItem{Helped students understand database, functional, and concurrent programming in a Survey Course}
+        \resumeItem{Helps debug simple embedded projects in C on Arduino}
+        \resumeItem{Proctored exams and labs, giving short lessons on related topics}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Student Ambassador for National Science Foundation Engineering Scholarship}{August 2024}
+      {UIC}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Taught a short, custom lesson on algorithmic thinking, and helped with lessons on logic gates}
+        \resumeItem{Offered advice on classes, professors, and skills relevant to CS and engineering}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Information Technology Support Specialist}{August 2021 -- December 2022}
+      {UIC Technology Solutions}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Communicated with managers to help with everything from enrollment to software troubleshooting}
+        \resumeItem{Demonstrated patience with older/technology-unfamiliar people and those in stressful, unfamiliar situations}
+        \resumeItem{Troubleshooted new services and software packages daily, keeping track of overlapping systems and the credentials they take}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+
+    % \resumeSubheading
+    %   {Frontend Sales Associate At Grocery Store}{June 2019 -- August 2020}
+    %   {Mariano's Fresh Market}{Wheaton, IL}
+    %   \resumeItemListStart
+    %     \resumeItem{Presented a friendly face to customers when bagging groceries and pushing carts}
+    %     \resumeItem{Helped customers with occasional questions and issues with the store}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/samuel-skean/My_Raytracing_Adventures.git}{\underline{Path Tracer and Bezier Drawer}}} $|$ \emph{Rust, SDL2, pixels, winit, serde}}{February 2024 -- August 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a simple path tracer (a kind of 3D renderer), mostly following Raytracing in One Weekend by Peter Shirley et al.}
+            \resumeItem{Used JSON to create a format to represent the world, and randomly generate spheres within that world}
+            \resumeItem{Added a command-line frontend and a concurrent graphical preview of the rendering}
+            \resumeItem{Wrote a tool to draw bezier curves and splines, with a simple GUI}
+          \resumeItemListEnd
+        % \resumeProjectHeading
+        %   {\textbf{15-Puzzle Graphical Game} $|$ \emph{Java, JavaFX}}{November 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a GUI application to let the player solve a 15-puzzle, a puzzle where numbers must be arranged in a certain way in a grid}
+        %     \resumeItem{Used A* search to solve the puzzle if the player asks}
+        %     \resumeItem{Implemented asynchronous UI and worker threads to keep the app responsive while the puzzle-solving code was busy}
+        %   \resumeItemListEnd
+          
+%      \resumeProjectHeading
+%          {\textbf{} $|$ \emph{F#}}{April 2022}
+%          \resumeItemListStart
+%            \resumeItem{Used F# to interpret the code in a file according to Backus-Naur form in entirely functional paradigm, with no side-effects, for safely extensible code}
+%          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Tracing Garbage Collector} $|$ \emph{C}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented a mark-and-sweep garbage collector in C}
+            \resumeItem{Created a simple memory allocator using sbrk()}
+            \resumeItem{Manipulated pointers to find all allocated, unused memory on the heap and free it without the need for delete statements}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{Nullability in a Simple OO Programming Language} $|$ \emph{OCaml}}{December 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Added the feature of nullability as seen in Swift, Dart, and Kotlin to a simple object-oriented programming language}
+      %       \resumeItem{Statically ensured programs could not crash by dereferencing null}
+      %       \resumeItem{Implemented typechecker and interpreter in OCaml in pure functional style}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
