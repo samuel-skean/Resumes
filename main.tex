@@ -145,7 +145,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: C/C++, Rust, Java, C\verb|#|, Dart, Swift, Go, Scala, Python, SQL (SQLite + PostgreSQL), JavaScript, HTML/CSS, F\verb|#|, OCaml, Matlab, Bash, AWK, x86 Assembly (AT\verb|&|T)} \\
-     \textbf{Technologies}{: Ansible, Git, JavaFX, React.js, Flutter, Hadoop, Spark, Axum (Rust web framework), Matplotlib, WebGL2, p5.js} \\
+     \textbf{Technologies}{: Ansible, Wireshark, Git, JavaFX, React.js, Flutter, Axum (Rust web framework), WebGL2, p5.js} \\
     }}
  \end{itemize}
  
@@ -153,13 +153,20 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {CS Teaching Assistant (Undergrad and Grad)}{January 2023 -- Present}
+      {CS Research Assistant (Grad)}{May 2025 -- Present}
+      {UIC}{Chicago, IL}
+      \resumeItemListStart
+        \resumeItem{Working on Compound, a project to improve inter-process communication speed by emulating Linux kernel behavior in userspace}
+        \resumeItem{Debugging quirks of signal handlers and race conditions to ensure clean termination of processes}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CS Teaching Assistant (Undergrad and Grad)}{January 2023 -- May 2025}
       {UIC}{Chicago, IL}
       \resumeItemListStart
         \resumeItem{\textbf{6} semesters of teaching experience, helping over 50 students personally}
         \resumeItem{Explained data structures in \textbf{C++}; motivated and troubleshooted \textbf{SQL}, \textbf{F\#}, and \textbf{Go} programming}
         \resumeItem{Led students in debugging simple embedded projects in C++ with \textbf{Arduino} and breadboards}
-        \resumeItem{Asks probing questions to help students understand principles of correct concurrent programming in \textbf{Java}}
+        \resumeItem{Asked probing questions to help students understand principles of correct concurrent programming in \textbf{Java}}
         \resumeItem{Graded and proctored exams, homework, and labs}
       \resumeItemListEnd
     \resumeSubheading
@@ -174,7 +181,7 @@
       {UIC Technology Solutions}{Chicago, IL}
       \resumeItemListStart
         \resumeItem{Demonstrated patience with older/technology-unfamiliar people and those in stressful, unfamiliar situations}
-        \resumeItem{Troubleshooted new services and software packages daily, including overlapping credential systems}
+        \resumeItem{Troubleshooted new services and software packages daily, including overlapping IAM systems}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -205,9 +212,10 @@
           {\textbf{\href{https://github.com/samuel-skean/xv6-public/tree/hw4-mmap}{\underline{MMap and Other Extensions for XV6}}} $|$ \emph{C}}{September 2024}
           \resumeItemListStart
             \resumeItem{Enabled user programs to treat inode files as though they were part of memory for flexible random access}
-            \resumeItem{User can chooses load each page lazily for minimum memory usage - or all-at-once for predictable performance}
+            \resumeItem{User can choose to load each page lazily for minimum memory usage - or all-at-once for predictable performance}
             \resumeItem{Also implemented color terminal and graphical display drivers, saving and restoring state for a clean interface}
           \resumeItemListEnd
+        \newpage
         \resumeProjectHeading
           {\textbf{\href{https://github.com/samuel-skean/mark_and_sweep_garbage_collector_in_c}{\underline{Tracing Garbage Collector}}} $|$ \emph{C}}{December 2022}
           \resumeItemListStart
@@ -219,8 +227,7 @@
           {\textbf{\href{https://github.com/samuel-skean/FifteenPuzzle}{\underline{15-Puzzle Graphical Game}}} $|$ \emph{Java, JavaFX}}{November 2021}
           \resumeItemListStart
             \resumeItem{Developed a GUI application to let the player solve a 15-puzzle, a puzzle where numbers must be arranged in a certain way in a grid}
-            \resumeItem{Used A* search to solve the puzzle if the player asks, visualizing solution step-by-step}
-            \resumeItem{Implemented asynchronous UI and worker threads to keep the app responsive while the puzzle-solving code was busy}
+            \resumeItem{Used A* search and worker threads to solve the puzzle in the background if the player asks, visualizing solution step-by-step}
           \resumeItemListEnd
 
         
