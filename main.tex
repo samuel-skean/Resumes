@@ -19,6 +19,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyperref}
+\usepackage[normalem]{ulem}
 
 \urlstyle{same}
 \input{glyphtounicode}
@@ -115,8 +116,8 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Samuel Skean} \\ \vspace{1pt} \href{mailto:skeansamuel64@gmail.com}{\underline{skeansamuel64@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/samuel-skean-nod}{\underline{linkedin.com/in/samuel-skean-nod}} $|$ \href{https://samuel-skean.github.io}{\underline{samuel-skean.net}}
+    \textbf{\Huge \scshape Samuel Skean} \\ \vspace{1pt} \href{mailto:skeansamuel64@gmail.com}{\uline{skeansamuel64@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/samuel-skean-nod}{\uline{linkedin.com/in/samuel-skean-nod}} $|$ \href{https://samuel-skean.net}{\uline{samuel-skean.net}}
 \end{center}
 
 
@@ -148,7 +149,7 @@
      \textbf{Other Tools}{: Ansible, Wireshark, Git, JavaFX, React.js, Flutter, Axum (Rust web framework), WebGL2} \\
     }}
  \end{itemize}
-
+ 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -183,7 +184,7 @@
         \resumeItem{Demonstrated patience with older/technology-unfamiliar people and those in stressful, unfamiliar situations}
         \resumeItem{Troubleshooted new services and software packages daily, including overlapping IAM systems}
       \resumeItemListEnd
-
+      
 % -----------Multiple Positions Heading-----------
 
     % \resumeSubheading
@@ -201,15 +202,15 @@
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/samuel-skean/My_Raytracing_Adventures.git}{\underline{Path Tracer}} and \href{https://github.com/samuel-skean/SkeanSplinesFun.git}{\underline{Bezier Drawer}}} $|$ \emph{Rust, pixels, winit, serde}}{February 2024 -- August 2024}
+          {\textbf{\href{https://github.com/samuel-skean/My_Raytracing_Adventures.git}{\uline{Path Tracer}} and \href{https://github.com/samuel-skean/SkeanSplinesFun.git}{\uline{Bezier Drawer}}} $|$ \emph{Rust, pixels, winit, serde}}{February 2024 -- August 2024}
           \resumeItemListStart
-            \resumeItem{Rendered spheres, planes, and reflections, mostly following \href{https://raytracing.github.io/books/RayTracingInOneWeekend.html}{\underline{Raytracing in One Weekend by Peter Shirley et al.}}}
+            \resumeItem{Rendered spheres, planes, and reflections, mostly following \href{https://raytracing.github.io/books/RayTracingInOneWeekend.html}{\uline{Raytracing in One Weekend by Peter Shirley et al.}}}
             \resumeItem{Added lights and a real-time graphical preview of the render}
             \resumeItem{Gained an \emph{8x} speedup by parallelizing the code across multiple cores}
             \resumeItem{Also wrote a similar tool to draw bezier curves and splines, with a simple GUI}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/samuel-skean/xv6-public/tree/hw4-mmap}{\underline{MMap and Other Extensions for XV6}}} $|$ \emph{C}}{September 2024}
+          {\textbf{\href{https://github.com/samuel-skean/xv6-public/tree/hw4-mmap}{\uline{MMap and Other Extensions for XV6}}} $|$ \emph{C}}{September 2024}
           \resumeItemListStart
             \resumeItem{Enabled user programs to treat inode files as though they were part of memory for flexible random access}
             \resumeItem{User can choose to load each page lazily for minimum memory usage - or all-at-once for predictable performance}
@@ -217,21 +218,21 @@
           \resumeItemListEnd
         \newpage
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/samuel-skean/mark_and_sweep_garbage_collector_in_c}{\underline{Tracing Garbage Collector}}} $|$ \emph{C}}{December 2022}
+          {\textbf{\href{https://github.com/samuel-skean/mark_and_sweep_garbage_collector_in_c}{\uline{Tracing Garbage Collector}}} $|$ \emph{C}}{December 2022}
           \resumeItemListStart
             \resumeItem{Implemented a mark-and-sweep garbage collector in C}
             \resumeItem{Allocated memory using sbrk(), maintaining an intrusive free list}
             \resumeItem{Manipulated pointers to find all allocated, unused memory on the heap and free it without the user calling free}
           \resumeItemListEnd
         \resumeProjectHeading
-          {\textbf{\href{https://github.com/samuel-skean/FifteenPuzzle}{\underline{15-Puzzle Graphical Game}}} $|$ \emph{Java, JavaFX}}{November 2021}
+          {\textbf{\href{https://github.com/samuel-skean/FifteenPuzzle}{\uline{15-Puzzle Graphical Game}}} $|$ \emph{Java, JavaFX}}{November 2021}
           \resumeItemListStart
             \resumeItem{Developed a GUI application to let the player solve a 15-puzzle, a puzzle where numbers must be arranged in a certain way in a grid}
             \resumeItem{Used A* search and worker threads to solve the puzzle in the background if the player asks, visualizing solution step-by-step}
           \resumeItemListEnd
 
-
-
+        
+      
       % \resumeProjectHeading
       %     {\textbf{Nullability in a Simple OO Programming Language} $|$ \emph{OCaml}}{December 2023}
       %     \resumeItemListStart
